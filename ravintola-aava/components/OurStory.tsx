@@ -5,7 +5,6 @@ const OurStory = () => {
   return (
     <section id="Tarina" className="bg-pale text-rough py-20 md:py-32">
       <div className="container mx-auto px-6">
-        {/* Section Title */}
         <div className="text-center mb-16">
           <h2 className="font-playfair text-5xl md:text-6xl italic text-gold">
             Tarinamme
@@ -16,10 +15,9 @@ const OurStory = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
-          {/* Image Column */}
           <div className="relative h-96 md:h-full w-full">
             <Image
-              src="/preview16.jpg" // Replace with your image
+              src="/preview16.jpg" 
               alt="Founder and Head Chef of AAVA"
               layout="fill"
               objectFit="cover"
@@ -27,7 +25,6 @@ const OurStory = () => {
             />
           </div>
 
-          {/* Text Content Column */}
           <div className="font-poppins text-off-navy">
             <h3 className="font-playfair text-4xl text-gold mb-4">
               Visio eleganssista

@@ -7,11 +7,10 @@ const Playfair = Playfair_Display({
   variable: "--font-playfair",
   subsets: ["latin"],
   weight: "600",
-  style: ["normal", "italic"], // 👈 enables italic
+  style: ["normal", "italic"],
   display: "swap",
 });
 
-// Poppins — for body text
 const Pop = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],

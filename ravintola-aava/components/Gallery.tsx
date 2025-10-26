@@ -1,12 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import { galleryImages } from "../data/galleryData"; // Adjust import path if needed
+import { galleryImages } from "../data/galleryData"; 
 
 const Gallery = () => {
   return (
     <section id="Galleria" className="bg-off-navy py-20 md:py-32">
       <div className="container mx-auto px-6">
-        {/* Section Title */}
         <div className="text-center mb-16">
           <h2 className="font-playfair text-5xl md:text-6xl italic text-pale">
             Visuaalinen harmonia
@@ -16,11 +15,6 @@ const Gallery = () => {
           </p>
         </div>
 
-        {/* 
-          --- THE FINAL FIX IS HERE ---
-          We add 'md:grid-flow-dense' to tell the grid to fill in any empty spots.
-          This eliminates the unwanted gaps and creates the packed masonry layout.
-        */}
         <div className="grid grid-cols-2 md:grid-cols-4 auto-rows-[250px] gap-4 md:grid-flow-dense">
           {galleryImages.map((image, index) => (
             <div

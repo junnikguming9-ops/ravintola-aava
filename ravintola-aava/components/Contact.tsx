@@ -1,8 +1,7 @@
 import React from "react";
-import { contactDetails, openingHours } from "../data/contactInfo"; // Adjust import path
+import { contactDetails, openingHours } from "../data/contactInfo";
 
 const Contact = () => {
-  // --- IMPORTANT: Paste your Google Maps iframe code here! ---
   const googleMapsEmbedCode = `
    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d992.1618726479619!2d24.94663461715154!3d60.17537346135147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfi!2sfi!4v1760109672947!5m2!1sfi!2sfi" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   `;
@@ -21,9 +20,7 @@ const Contact = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 md:gap-16">
-          {/* Column 1: Contact Info & Hours */}
           <div className="font-poppins text-off-navy">
-            {/* Contact Details */}
             <div className="mb-12">
               <h3 className="font-playfair text-4xl text-gold mb-4">
                 Vieraile meillä
@@ -38,7 +35,6 @@ const Contact = () => {
               </p>
             </div>
 
-            {/* Opening Hours */}
             <div>
               <h3 className="font-playfair text-4xl text-gold mb-4">
                 Aukiolo Ajat
@@ -55,7 +51,6 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Column 2: Google Map */}
           <div className="w-full h-96 md:h-full min-h-[400px] rounded-lg overflow-hidden">
             <div
               className="w-full h-full"
